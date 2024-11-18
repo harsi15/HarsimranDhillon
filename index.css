@@ -30,6 +30,115 @@ body {
   position: relative;
 }
 
+.navbar {
+  background-color: #222222; /* Dark background */
+  padding: 15px 0; /* Padding for the navbar */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  right: 0; /* Align it to the right */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the container */
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff; /* White text */
+  font-size: 24px; /* Brand font size */
+  text-decoration: none; /* No underline */
+}
+
+.navbar-menu {
+  list-style: none; /* Remove list style */
+  display: flex; /* Flexbox for horizontal layout */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+.navbar-menu li {
+  margin-left: 30px; /* Space between menu items */
+}
+
+
+
+.navbar-menu a {
+  color: #ffffff; /* White text */
+  text-decoration: none; /* No underline */
+  font-weight: 500; /* Font weight */
+  transition: color 0.3s; /* Transition effect */
+}
+
+.navbar-menu a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center align the items */
+    }
+
+    .navbar-menu li {
+        margin: 10px 0; /* Add some space between menu items */
+    }
+
+    .landing {
+        text-align: center; /* Center the text in the landing section */
+    }
+
+    .landing .col-lg-8,
+    .landing .col-lg-4 {
+        flex: 100%; /* Make columns full width */
+    }
+
+    .about-desc {
+        text-align: center; /* Center the about section text */
+    }
+
+    .wrap {
+        margin: 0 auto; /* Center the wrap div */
+    }
+
+    .icon-box {
+        text-align: center; /* Center the icons */
+        margin: 20px 0; /* Add space around icons */
+    }
+
+    .progress-wrap {
+        margin-bottom: 20px; /* Space between progress bars */
+    }
+
+    .blog-entry {
+        margin-bottom: 30px; /* Space between blog entries */
+    }
+}
+
+@media (max-width: 576px) {
+    .body {
+        font-size: 14px; /* Slightly smaller font size for small screens */
+    }
+
+    .navbar {
+        padding: 10px 0; /* Reduce padding in the navbar */
+    }
+
+    .landing h1 {
+        font-size: 2.5rem; /* Adjust heading size for mobile */
+    }
+
+    .landing p {
+        font-size: 1rem; /* Adjust paragraph size for mobile */
+    }
+}
+
 .vertical-center {
   min-height: 100%; /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */

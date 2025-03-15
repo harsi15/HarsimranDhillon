@@ -5,7 +5,13 @@
   transform: translateY(40px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+.lang-img{
+  height: 23px;
+}
 
+.img-fluid{
+  width: 330px;
+}
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -184,8 +190,12 @@ body {
     .icon-box {
         text-align: center; /* Center the icons */
         margin: 20px 0; /* Add space around icons */
+        align-items: flex-start;
     }
 
+    .icons-box-class{
+      display: ruby;
+    }
     .progress-wrap {
         margin-bottom: 20px; /* Space between progress bars */
     }
